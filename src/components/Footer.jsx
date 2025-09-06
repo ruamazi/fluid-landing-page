@@ -176,7 +176,7 @@ const Footer = () => {
 
     {/* Bottom Section */}
     <div className="border-t border-gray-700 pt-6">
-     <div className="flex justify-between items-center">
+     <div className=" flex-col md:flex justify-between items-center">
       <div className="flex space-x-6">
        <a href="#" className="text-gray-400 hover:text-white text-sm underline">
         Privacy Policy
@@ -185,7 +185,7 @@ const Footer = () => {
         Terms and Conditions
        </a>
       </div>
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-4 mt-2">
        <p className="text-gray-400 text-sm">
         Copyright © FLUID AI | Designed by FLUID AI International Corporation -
         ALL RIGHTS RESERVED

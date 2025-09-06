@@ -99,7 +99,7 @@ const Organizations = () => {
        key={index}
        className="flex-shrink-0 w-32 md:w-48 lg:w-56 grayscale filter transition duration-300 ease-in-out grayscale-hover"
       >
-       <img src={logo.imgUrl} alt={logo.name} className="mx-auto h-18" />
+       <img src={logo.imgUrl} alt={logo.name} className="mx-auto" />
       </div>
      ))}
     </div>

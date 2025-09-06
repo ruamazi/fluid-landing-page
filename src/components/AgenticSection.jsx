@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const AgenticSection = () => {
  return (
-  <section className="bg-white py-6 md:py-24">
+  <section className="bg-white py-6 md:py-12">
    <div className="container mx-auto px-4 md:px-8">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
      {/* Left Column: Text Content */}

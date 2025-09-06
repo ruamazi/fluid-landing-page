@@ -3,7 +3,7 @@ import { ReactTyped } from "react-typed";
 
 const Hero = () => {
  return (
-  <div className="w-full bg-[#020d1e] text-white mt-17">
+  <div className="w-full bg-[#020d1e] text-white mt-17 bg-[url('/bg-img1.webp')] bg-cover">
    <div className=" mx-auto flex flex-col lg:flex-row items-center justify-between px-8 py-16 max-w-[1346px]">
     <div className="w-full lg:w-1/2 text-left mb-10 lg:mb-0 relative">
      <h1 className="text-5xl md:text-5xl font-extrabold leading-tight text-[#fdb529] mb-4">
@@ -38,7 +38,6 @@ const Hero = () => {
      />
     </div>
     <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
-     {/* Replace with your image or SVG */}
      <div className="w-full relative">
       <img
        src="./fluid-img.webp"

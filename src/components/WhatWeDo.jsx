@@ -1,7 +1,3 @@
-// src/components/WhatWeDoSection.jsx
-
-import React from "react";
-
 const WhatWeDoSection = () => {
  return (
   <section className="bg-white py-16 px-8 lg:px-16">
@@ -56,7 +52,7 @@ const WhatWeDoSection = () => {
      <div className="flex-1 flex justify-center md:justify-end">
       <div className="bg-gray-200 rounded-3xl overflow-hidden shadow-xl">
        <img
-        src="what-we-do.webp" // Replace with your image path
+        src="what-we-do.webp"
         alt="Hands typing on a laptop displaying AI"
         className="w-full h-auto object-cover"
        />

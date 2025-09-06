@@ -9,6 +9,11 @@ import HowItWorks from "../components/HowItWorks";
 import AgenticSection from "../components/AgenticSection";
 import LLMsSection from "../components/LLMsSection";
 import ArchitectureSection from "../components/ArchitectureSection";
+import IntegrationsSection from "../components/IntegrationsSection";
+import FeaturesSection from "../components/FeaturesSection";
+import FaqSection from "../components/FaqSection";
+import AboutUsSection from "../components/AboutUsSection";
+import BlogsSection from "../components/BlogsSection";
 
 const Home = () => {
  return (
@@ -22,6 +27,11 @@ const Home = () => {
    <AgenticSection />
    <LLMsSection />
    <ArchitectureSection />
+   <IntegrationsSection />
+   <FeaturesSection />
+   <FaqSection />
+   <AboutUsSection />
+   <BlogsSection />
    <Footer />
   </>
  );

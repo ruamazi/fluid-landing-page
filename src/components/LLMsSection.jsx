@@ -1,7 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
 
-// Placeholder for your actual logo images.
-// In a real app, you'd import these or use public URLs.
 const logos = [
  {
   id: 1,

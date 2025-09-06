@@ -18,7 +18,7 @@ const NavLinks = ({
  isResourcesOpen,
  toggleResources,
 }) => (
- <div className={className}>
+ <div className={`${className} relative`}>
   <a href="#" className="hover:text-[#fdb529]">
    Home
   </a>
@@ -27,7 +27,7 @@ const NavLinks = ({
   </a>
 
   {/* Solutions dropdown */}
-  <div className="relative group lg:block">
+  <div className=" group lg:block">
    <a
     href="#"
     className="flex items-center gap-2 hover:text-[#fdb529]"
@@ -51,7 +51,7 @@ const NavLinks = ({
   </div>
 
   {/* Resources dropdown */}
-  <div className="relative group lg:block">
+  <div className="group lg:block">
    <a
     href="#"
     className="flex items-center gap-2 hover:text-[#fdb529]"
@@ -66,7 +66,7 @@ const NavLinks = ({
     />
    </a>
    <div
-    className={`lg:absolute lg:left-0 lg:top-full lg:mt-2 lg:invisible lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 lg:group-hover:translate-y-1 transition-all duration-300 lg:bg-[#0d1b3a] text-white lg:p-6 lg:rounded-2xl lg:shadow-lg lg:flex lg:gap-6 lg:z-50 ${
+    className={`lg:absolute lg:left-20 lg:top-full lg:mt-2 lg:invisible lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 lg:group-hover:translate-y-1 transition-all duration-300 lg:bg-[#0d1b3a] text-white lg:p-6 lg:rounded-2xl lg:shadow-lg lg:flex lg:gap-6 lg:z-50 ${
      isResourcesOpen ? "block" : "hidden"
     }`}
    >
@@ -197,9 +197,7 @@ const Navbar = () => {
    {/* Mobile Menu */}
    <div
     className={`absolute top-full left-0 w-full bg-[#010c1e] lg:hidden transition-all duration-300 ease-in-out ${
-     isMenuOpen
-      ? "max-h-screen overflow-y-auto"
-      : "max-h-0 overflow-hidden"
+     isMenuOpen ? "max-h-screen overflow-y-auto" : "max-h-0 overflow-hidden"
     }`}
    >
     <NavLinks

@@ -29,9 +29,9 @@ const AgenticSection = () => {
        </button>
       </div>
 
-      {/* Sub-section with image placeholder */}
+      {/* Sub-section */}
       <div className="bg-gray-100 p-6 rounded-lg flex items-center space-x-6">
-       {/* Placeholder for the smaller image */}
+       {/* the smaller image */}
        <div className="w-100 flex items-center justify-center">
         <img
          src="./howitworks-img3.webp"
@@ -46,7 +46,7 @@ const AgenticSection = () => {
       </div>
      </div>
 
-     {/* Right Column: Image Placeholder */}
+     {/* Right Column: Image */}
      <div className="flex-col md:flex justify-center items-center">
       <motion.div
        initial={{ x: -200, opacity: 0 }} // Start off-screen to the left

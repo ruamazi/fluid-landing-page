@@ -8,6 +8,7 @@ import ImpactSection from "../components/ImpactSection";
 import HowItWorks from "../components/HowItWorks";
 import AgenticSection from "../components/AgenticSection";
 import LLMsSection from "../components/LLMsSection";
+import ArchitectureSection from "../components/ArchitectureSection";
 
 const Home = () => {
  return (
@@ -20,6 +21,7 @@ const Home = () => {
    <HowItWorks />
    <AgenticSection />
    <LLMsSection />
+   <ArchitectureSection />
    <Footer />
   </>
  );

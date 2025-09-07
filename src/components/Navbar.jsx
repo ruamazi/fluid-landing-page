@@ -181,13 +181,13 @@ const Navbar = () => {
     >
      <Menu
       size={28}
-      className={`absolute transition-all duration-300 ${
+      className={`absolute top-1 left-1 transition-all duration-300 ${
        isMenuOpen ? "opacity-0 rotate-90" : "opacity-100 rotate-0"
       }`}
      />
      <X
       size={28}
-      className={`absolute transition-all duration-300 ${
+      className={`absolute top-1 left-1 transition-all duration-300 ${
        isMenuOpen ? "opacity-100 rotate-0" : "opacity-0 -rotate-90"
       }`}
      />

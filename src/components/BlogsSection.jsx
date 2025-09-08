@@ -40,7 +40,7 @@ const BlogsSection = () => {
    <div className="md:flex gap-2 p-4 md:p-0">
     {blogData.map((blog, index) => (
      <div key={index} className="flex flex-col pb-8 mb-8">
-      <div className="w-full md:h-[210px] mb-3 rounded-3xl overflow-hidden bg-red-300">
+      <div className="w-full md:h-[210px] mb-3 rounded-3xl overflow-hidden">
        <img
         loading="lazy"
         src={blog.image}

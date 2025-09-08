@@ -4,17 +4,18 @@ import { AnimatePresence, motion } from "framer-motion";
 // Content for each integration tab
 const integrationsContent = {
  "Finance & Big Data": {
-  description: "Snowflake, SAP Forex, SQL",
+  description: " Leverage Snowflake, SAP Forex, and SQL for smarter decisions.",
   image: "integrations-img1.webp",
   key: "finance",
  },
  "Collaboration & Knowledge": {
-  description: "confluence, Google Drive",
+  description: "Connect Confluence and Google Drive to centralize knowledge.",
   image: "integrations-img2.webp",
   key: "collaboration",
  },
  "Multi-App Connectivity": {
-  description: "Chrome Extensions, Slack, MS Teams, Gmail",
+  description:
+   "Extend automation into Slack, MS Teams, Gmail, and Chrome with ease.",
   image: "integrations-img3.webp",
   key: "multi-app",
  },
@@ -31,12 +32,11 @@ const IntegrationsSection = () => {
       Powerful Integrations
      </p>
      <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-      Seamlessly Connect Across Your Ecosystem
+      Connected Intelligence for Every Workflow
      </h2>
      <p className="mt-4 text-lg text-gray-700 max-w-3xl mx-auto">
-      Fluid AI integrates effortlessly with your internal systems, APIs, and
-      external data sources—ensuring real-time data flow for intelligent
-      automation.
+      Ovado.ai plugs into your business ecosystem with powerful
+      integrations—bridging systems, data, and teams for seamless automation.
      </p>
     </div>
 

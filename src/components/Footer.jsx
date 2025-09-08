@@ -18,12 +18,8 @@ const Footer = () => {
      {/* Company Info */}
      <div className="lg:col-span-1">
       <div className="mb-6">
-       <img
-        src="./logo.webp"
-        alt="Fluid AI Logo"
-        width={120}
-        className="mb-2"
-       />
+       {/* <img src="./2.png" alt="Ovado ai Logo" width={120} className="mb-2" /> */}
+       <p className="logo text-2xl p-2 mb-2">Ovado Ai</p>
        <div className="flex space-x-4 mb-4">
         <Linkedin className="w-5 h-5 text-gray-400 hover:text-blue-400 cursor-pointer italic transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-400/50" />
         <Youtube className="w-5 h-5 text-gray-400 hover:text-red-400 cursor-pointer italic transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-400/50" />
@@ -32,14 +28,14 @@ const Footer = () => {
         <Instagram className="w-5 h-5 text-gray-400 hover:text-pink-400 cursor-pointer italic transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-pink-400/50" />
        </div>
        <p className="text-sm text-gray-300 italic">
-        Fluid AI International Corporation (USA)
+        Ovado AI International Corporation (USA)
        </p>
       </div>
      </div>
 
-     {/* Explore Fluid AI */}
+     {/* Explore Ovado AI */}
      <div>
-      <h3 className="text-[#fdb529] font-semibold mb-4">Explore Fluid AI</h3>
+      <h3 className="text-[#fdb529] font-semibold mb-4">Explore Ovado AI</h3>
       <ul className="space-y-2">
        <li>
         <a href="#" className=" hover:text-[#fdb529] text-sm flex items-center">
@@ -187,7 +183,7 @@ const Footer = () => {
       </div>
       <div className="flex items-center space-x-4 md:mt-0 mt-2">
        <p className="text-gray-400 text-sm">
-        Copyright © FLUID AI | Designed by FLUID AI International Corporation -
+        Copyright © Ovado AI | Designed by OVADO AI International Corporation -
         ALL RIGHTS RESERVED
        </p>
       </div>

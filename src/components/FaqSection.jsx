@@ -4,21 +4,21 @@ import { Plus, Minus, ArrowUpRight } from "lucide-react";
 
 const faqData = [
  {
-  question: "What is Fluid AI ?",
+  question: "What is Ovado.ai ?",
   answer:
-   "Fluid AI is an leading AI company, that specializes in making Generative AI technology Enterprise-ready. Fluid AI offer Gen-AI powered Chatbots, Voice Calling bots, range of API's to build a customized layer on top and Integrations that can drive more powerful automation. The solution offered by Fluid AI are designed to enhance end-customer experiences (CX), streamline organizational internal workflows & boost employee productivity (EX), enhancing data driven decision-making, across various industries.",
+   "Ovado.ai is a next-gen multi-agent AI platform designed to automate workflows, enhance decision-making, and deliver human-like experiences. It helps businesses achieve efficiency, speed, and scalability with intelligent automation.",
  },
  {
   question:
-   "Can I integrate Fluid AI with my organisations current workflows ?",
+   "Can I integrate Ovado.ai with my organisation’s current workflows ?",
   answer:
-   "Yes, organizations can easily integrate Fluid AI with their current systems, with over 1000+ APIs available. It can seamlessly connect with existing tools and applications, (Slack and Microsoft Teams,) for Omnichannel experienceThe integration capabilities extend to various data sources, including cloud storage and databases, to SQL data. This allows for easy and efficient access to organization-specific information, enabling quick accurate responses to queries, all the while safeguarding the confidentiality & security of your data.",
+   "Yes. Ovado.ai integrates seamlessly with your existing tools, systems, and applications. Whether on cloud, on-premises, or hybrid setups, our platform adapts to your infrastructure with minimal effort.",
  },
  {
   question:
    "How can I choose the use cases to deploy the Generative AI Solution for my organisation ?",
   answer:
-   "We suggest organisations to start with small internal pilot projects to test effectiveness before full-scale deployment. At this level you can prioritize use cases that directly benefit employees and free them for higher-value use case, like customer support, HR team, Employe support, Sales Team, legal assistance, etc. Organisations find this more effective and helps to build confidence to gain an understanding of the technology, and then expanding its implementation across.Our expertise lies in guiding organizations through a seamless transition, empowering organizations to fully unlock the potential of GenAI, leading to performance enhancements, productivity gains, and a competitive edge in the marketplace. Book a Free Strategic Call with us.",
+   "Our team works closely with you to identify high-impact areas where AI delivers the most value—be it customer support, operations, marketing, or sales. Ovado.ai’s modular design allows you to start small and scale across multiple use cases as your needs grow.",
  },
 ];
 

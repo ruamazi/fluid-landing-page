@@ -7,27 +7,27 @@ const ImpactSection = () => {
    icon: "./cs.webp",
   },
   {
-   title: "Agent Support",
+   title: "Agent Assistance",
    icon: "./as.webp",
   },
   {
-   title: "Operations",
+   title: "Operations Automation",
    icon: "./op.webp",
   },
   {
-   title: "Sales",
+   title: "Sales Enablement",
    icon: "./sl.webp",
   },
   {
-   title: "Marketing",
+   title: "Smarter Marketing",
    icon: "./mk.webp",
   },
   {
-   title: "Supply Chain",
+   title: "Supply Chain Optimization",
    icon: "./sc.webp",
   },
   {
-   title: "Human Resources",
+   title: "HR Transformation",
    icon: "./hr.webp",
   },
   {
@@ -48,9 +48,9 @@ const ImpactSection = () => {
       Use Cases
      </h1>
      <p className="max-w-3xl mx-auto text-gray-600 text-lg md:text-xl">
-      Connect your tools, connect your teams. With over 100 apps already
-      available in our directory, your team's favorite tools are just a click
-      away.
+      Unify your teams and tools with Ovado.ai. Choose from 100+ ready-to-use
+      integrations—or create your own—to supercharge productivity and customer
+      success.
      </p>
     </div>
 

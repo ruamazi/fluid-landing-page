@@ -4,42 +4,42 @@ import { ArrowUpRight } from "lucide-react";
 // Define the content for each tab
 const content = {
  "Fully Private Cloud": {
-  title: "Fully Private Cloud: Complete data privacy and compliance.",
+  title: "Fully Private Cloud: Enterprise-Grade Security at Every Level.",
   features: [
-   "Fully Self-Hosted AI – No external dependencies, complete in-house control.",
-   "On-Prem & Air-Gapped – Secure deployments for high-compliance industries.",
-   "Zero Third-Party Reliance – Full ownership of AI models and workloads.",
-   "Total Data Sovereignty – Complete control over sensitive enterprise data.",
+   "100% Self-Hosted – Keep AI fully under your control.",
+   "Ultra-Secure On-Prem & Air-Gapped – For industries where compliance is non-negotiable.",
+   "No Third-Party Risks – Own your AI stack end-to-end.",
+   "True Data Sovereignty – Protect and manage your most sensitive information with confidence.",
   ],
   imageSrc: "./architecture-img1.webp",
   imageAlt: "Diagram of Fully Private Cloud architecture",
  },
  "Cloud Infrastructure": {
-  title: "Cloud Infrastructure: Public Cloud for rapid scaling.",
+  title: "Scale Without Limits on Ovado.ai Cloud.",
   features: [
-   "Fully Managed AI Stack – Deployed on Fluid AI’s secure, high-performance cloud.",
-   "Dynamic LLM Orchestration – Real-time inference, fine-tuning, and seamless updates.",
-   "Scalable & Cost-Efficient – Elastic compute with enterprise-grade security.",
+   "End-to-End Managed AI – Let Ovado.ai handle the heavy lifting on a secure, high-speed cloud.",
+   "Smart LLM Orchestration – Real-time learning, auto-tuning, and effortless upgrades.",
+   "Built to Scale – Expand instantly with elastic compute and enterprise-grade security.",
   ],
   imageSrc: "./architecture-img2.webp",
   imageAlt: "Diagram of Cloud Infrastructure architecture",
  },
  "Hybrid Cloud": {
-  title: "Hybrid Cloud: Data Isolation Model for sensitive workflows.",
+  title: "Hybrid Cloud: The Best of Both Worlds.",
   features: [
-   "Hybrid AI Processing – Data stays in your cloud, AI runs on Fluid AI’s compute.",
-   "Zero Raw Data Transfer – Decoupled architecture ensures full data control.",
-   "Governance-First Security – Dedicated control plane for compliance and policies.",
+   " Process Locally, Compute Securely – Keep your data in your cloud while Ovado.ai handles the AI workloads.",
+   "No Data Exposure – Architecture built to prevent raw data from ever leaving your environment.",
+   "Compliance at the Core – Governance-first approach ensures policies and regulations are met effortlessly.",
   ],
   imageSrc: "./architecture-img3.webp",
   imageAlt: "Diagram of Hybrid Cloud architecture",
  },
  "Private LLM Deployment": {
-  title: "Private LLM Deployment: Custom models in your customer cloud.",
+  title: "Private LLM Deployment: Your Models, Your Cloud.",
   features: [
-   "Full LLM Stack Deployment – Runs entirely within your enterprise cloud.",
-   "Private & Secure Processing – Only the control plane stays in Fluid AI’s cloud.",
-   "Enterprise-Grade Governance – Complete control over AI access and compliance.",
+   "100% In-Cloud – Deploy the complete LLM stack inside your enterprise cloud.",
+   "Rock-Solid Security – Data never leaves your environment; only orchestration is external.",
+   "Total Governance – Own and control every aspect of AI access, policies, and compliance.",
   ],
   imageSrc: "./architecture-img4.webp",
   imageAlt: "Diagram of Private LLM Deployment architecture",
@@ -56,11 +56,13 @@ const ArchitectureSection = () => {
    <div className="container mx-auto px-4 md:px-8">
     <div className="text-center mb-8">
      <p className="mx-auto text-sm text-blue-500 mb-2 bg-blue-100 w-fit px-2 rounded-xl ">
-      Architecture
+      Your AI, Your Infrastructure
      </p>
 
-     <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-      Tailored Deployment Options for Your Architecture
+     <h2 className="text-3xl md:text-4xl font-semibold leading-tight">
+      Ovado.ai adapts to your enterprise architecture with flexible, secure
+      deployment options—giving you total control over data, compliance, and
+      scale.
      </h2>
     </div>
 

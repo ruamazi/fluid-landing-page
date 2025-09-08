@@ -155,9 +155,10 @@ const Navbar = () => {
  return (
   <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 px-10 md:px-30 bg-[#010c1e] text-white">
    <div className="flex items-center space-x-2">
-    <Link to="/" className="text-xl font-bold">
-     <img src="/logo.webp" alt="logo" className="w-19" />
-    </Link>
+    {/* <Link to="/" className="text-xl font-bold">
+     <img src="/2.png" alt="logo" className="w-19" />
+    </Link> */}
+    <p className="text-xl logo">Ovado Ai</p>
    </div>
 
    {/* Desktop Menu */}

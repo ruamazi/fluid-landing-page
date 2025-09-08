@@ -74,11 +74,11 @@ const LLMsSection = () => {
        AI That Understands, Thinks & Acts
       </p>
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-       LLMs in Agentic AI – The Intelligence Behind the System
+       The Brains Behind Ovado.ai
       </h2>
       <p className="text-lg text-gray-700 mb-8 max-w-xl lg:max-w-none mx-auto lg:mx-0">
-       Our platform integrates the industry's most trusted and high-performing
-       AI models
+       Ovado.ai harnesses the world’s leading LLMs—trusted, high-performing
+       models that fuel intelligence, adaptability, and unmatched results.
       </p>
       <button className="flex mx-auto md:mx-0 text-white items-center justify-center gap-1 bg-blue-600 px-8 py-4 rounded-lg hover:text-blue-600 hover:bg-gray-100">
        Book a Demo Call

@@ -5,7 +5,7 @@ const BlogsSection = () => {
   {
    title: "Top 5 AI-Generated Ads of 2025 That Changed the Game",
    description:
-    "2025 marked the breakout of AI ads—faster, cheaper, and bolder. From Fluid AI to Nike, brands proved AI can deliver cinematic, emotional, and cultural impact.",
+    "2025 marked the breakout of AI ads—faster, cheaper, and bolder. From Ovado AI to Nike, brands proved AI can deliver cinematic, emotional, and cultural impact.",
    image: "./blog-img1.png",
    date: "september 5, 2025",
   },
@@ -13,7 +13,7 @@ const BlogsSection = () => {
    title:
     "Agentic AI vs Generative AI in Banking: Why 2025 Belongs to Digital Workforces, Not Chatbots",
    description:
-    "Generative AI chats, Agentic AI acts: Fluid AI powers banks with context-aware, compliant, multi-agent workflows for fraud, lending, CX, and wealth management.",
+    "Generative AI chats, Agentic AI acts: Ovado AI powers banks with context-aware, compliant, multi-agent workflows for fraud, lending, CX, and wealth management.",
    image: "./blog-img2.png",
    date: "September 3, 2025",
   },
@@ -34,7 +34,7 @@ const BlogsSection = () => {
      Blogs
     </p>
     <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-     Check Out the Latest from Fluid
+     Check Out the Latest from Ovado
     </h2>
    </div>
    <div className="md:flex gap-2 p-4 md:p-0">

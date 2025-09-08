@@ -14,45 +14,43 @@ const features = [
  {
   icon: Sparkles,
   title: "Agentic AI with RAG",
-  description: "AI dynamically retrieves and processes real-time insights.",
+  description: "Dynamically retrieves and processes real-time insights.",
   iconColor: "text-blue-500",
  },
  {
   icon: SquareUser,
   title: "Custom AI Avatars",
-  description: "Create AI-powered influencers like AIsha for engagement.",
+  description: "Build AI-powered digital personas for engagement.",
   iconColor: "text-orange-500",
  },
  {
   icon: Zap,
   title: "Seamless AI + Human",
-  description: "AI automates content, while humans add strategy.",
+  description: "AI drives automation while humans add strategy.",
   iconColor: "text-pink-500",
  },
  {
   icon: Globe,
   title: "Customizable Solutions",
-  description: "Tailored to your business processes and challenges.",
+  description: "Tailored to fit your business processes.",
   iconColor: "text-green-500",
  },
  {
   icon: Code,
   title: "No-Code AI Development",
-  description: "Drag-and-drop interface for easy AI customization",
+  description: "Drag-and-drop tools for fast customization.",
   iconColor: "text-yellow-500",
  },
  {
   icon: TrendingUp,
   title: "Immediate ROI",
-  description:
-   "Faster results, improved accuracy, and streamlined operations from day one.",
+  description: "Faster results, higher accuracy, and streamlined ops.",
   iconColor: "text-purple-500",
  },
  {
   icon: Lock,
   title: "Enterprise-Grade Security",
-  description:
-   "Fluid AI is ISO 27001 certified and SOC 2 Type II compliant, ensuring enterprise-grade.",
+  description: "ISO 27001 + SOC 2 Type II compliance.",
   iconColor: "text-red-500",
  },
 ];
@@ -63,13 +61,14 @@ const FeaturesSection = () => {
    <div className="container mx-auto px-4 md:px-8">
     <div className="text-center mb-12">
      <p className="mx-auto text-sm text-blue-500 mb-2 bg-blue-100 w-fit px-2 rounded-xl ">
-      Why Choose Fluid AI?
+      Why Choose Ovado AI?
      </p>
      <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-      Unmatched Performance, Security, and Speed – Deploy in 60 Days
+      Deploy Smarter AI in Just 60 Days
      </h2>
      <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
-      Fluid AI’s Agentic AI Platform is built to deliver results, backed by:
+      Ovado.ai combines performance, security, and flexibility to help you
+      achieve faster impact:
      </p>
     </div>
 

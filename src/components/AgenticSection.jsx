@@ -10,14 +10,23 @@ const AgenticSection = () => {
       <p className="text-sm text-blue-500 mb-2 bg-blue-100 w-fit px-2 rounded-xl ">
        Agentic RAG
       </p>
-      <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-       AI That Learns, Adapts & Optimizes in Real Time
+      <h1 className="text-4xl md:text-5xl font-semibold md:font-bold leading-tight mb-6">
+       Smarter RAG: Real-Time Learning that Drives Results
       </h1>
-      <p className="text-lg text-gray-500 mb-8 font-bold">
-       Traditional Retrieval-Augmented Generation (RAG) simply fetches and
-       generates responses, but Fluid AI's Agentic RAG takes it further—it
-       thinks strategically, refines insights, and aligns with business goals
-       dynamically.
+      <p className="text-lg text-gray-500 mb-8 font-semibold">
+       Unlike standard RAG, Ovado.ai’s Agentic RAG doesn’t just answer
+       questions—it learns, adapts, and optimizes continuously to meet your
+       business goals with precision.
+       <ul className="list-disc list-inside text-black">
+        <li className="text-gray-500">
+         <span className="font-bold text-black">Dynamic Learning</span> -
+         Constantly evolving with new data.
+        </li>
+        <li className="text-gray-500">
+         <span className="font-bold text-black">Goal-Driven Outputs</span> -
+         Insights aligned with outcomes that matter.
+        </li>
+       </ul>
       </p>
 
       <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
@@ -40,8 +49,8 @@ const AgenticSection = () => {
         />
        </div>
        <p className="text-base font-bold">
-        Agents continuously refine answers based on past data and real-time
-        inputs.
+        Agents enhance every response by combining past context with real-time
+        signals, delivering intelligence you can act on immediately.
        </p>
       </div>
      </div>
@@ -63,8 +72,8 @@ const AgenticSection = () => {
     {/* Bottom text line */}
     <div className="mt-6 text-center md:text-left">
      <p className=" text-gray-600 font-bold">
-      Your AI isn't just retrieving information—it's strategizing, optimizing,
-      and delivering actionable intelligence.
+      Ovado.ai transforms information into strategy—accurate, evolving, and
+      business-ready.
      </p>
     </div>
    </div>

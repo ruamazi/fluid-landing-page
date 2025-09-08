@@ -9,7 +9,7 @@ const HowItWorks = () => {
    icon: Zap,
    title: "Intelligent, Modular, and Rapid Deployment",
    description:
-    "Fluid AI’s Agentic AI Platform automates enterprise workflows with adaptive AI agents, optimizing processes with minimal human input.",
+    "Ovado.ai automates enterprise workflows with adaptive AI agents, streamlining processes with minimal manual effort.",
    color: "text-emerald-500",
    img: "./howitworks-img1.webp",
   },
@@ -17,7 +17,7 @@ const HowItWorks = () => {
    icon: Bot,
    title: "AI-Powered Workflow Creation",
    description:
-    "Define your workflow goals, and Fluid AI intelligently configures AI agents with predefined logic to execute complex tasks efficiently.",
+    " Define workflow goals and Ovado.ai intelligently configures agents with pre-set logic to execute complex tasks effectively.",
    color: "text-amber-600",
    img: "./howitworks-img2.webp",
   },
@@ -25,7 +25,7 @@ const HowItWorks = () => {
    icon: Network,
    title: "Autonomous Multi-Agent Collaboration",
    description:
-    "Specialized AI agents handle planning, execution, and decision-making, working together to drive efficiency and accuracy.",
+    "Specialized AI agents handle planning, execution, and decision-making, working together to maximize efficiency and accuracy.",
    color: "text-purple-500",
    img: "./howitworks-img3.webp",
   },
@@ -33,7 +33,7 @@ const HowItWorks = () => {
    icon: Server,
    title: "Seamless Deployment Across Any Infrastructure",
    description:
-    "Deploy on cloud, on-premise, or hybrid environments with enterprise-grade security, compliance, and scalability.",
+    "Deploy on cloud, on-premise, or hybrid setups with enterprise-grade security, compliance, and scalability.",
    color: "text-purple-500",
    img: "./howitworks-img4.webp",
   },
@@ -55,12 +55,13 @@ const HowItWorks = () => {
     </p>
     <div>
      <h2 className="lg:text-center text-4xl md:text-5xl font-bold py-3 text-center">
-      Intelligent, Modular, and Rapid Deployment
+      Faster, Smarter, and Built to Scale
      </h2>
      <div className="text-xl mb-8 mt-2  text-center max-w-3xl mx-auto">
       <p>
-       Our Agentic AI Platform combines cutting-edge modular workflows and
-       real-time learning to streamline tasks and optimize decisions:
+       Ovado.ai’s Agentic AI Platform lets you launch modular workflows in
+       minutes, optimize decisions in real time, and adapt seamlessly as your
+       business grows:
       </p>
      </div>
     </div>

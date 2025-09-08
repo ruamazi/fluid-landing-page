@@ -10,16 +10,17 @@ const AboutUsSection = () => {
       <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
        Transformation with
        <br />
-       <span className="text-yellow-400">Fluid AI</span>
+       <span className="text-yellow-400">Ovado AI</span>
       </h2>
 
       <p className="mt-6 text-slate-600 max-w-2xl text-base md:text-lg">
-       Join leading businesses using the <strong>Agentic AI Platform</strong> to
-       drive efficiency, innovation, and growth.
+       Join leading businesses using the{" "}
+       <strong>Ovado Agentic AI Platform</strong> to unlock efficiency,
+       innovation, and growth.
       </p>
 
       <p className="mt-4 text-slate-700 max-w-2xl text-base md:text-lg">
-       Contact Us Today to schedule a demo and see how Agentic AI can
+       Contact us today to schedule a demo and see how Ovado.ai can
        revolutionize your business operations.
       </p>
 

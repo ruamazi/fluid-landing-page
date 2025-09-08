@@ -14,9 +14,9 @@ const Hero = () => {
       <ReactTyped
        strings={[
         "Cut support costs",
-        "boost team efficiency",
-        "elight every customer with AI-powered",
-        "personalized assistance that drives results",
+        "Boost team efficiency",
+        "Elight every customer with AI-powered",
+        "Personalized assistance that drives results",
        ]}
        typeSpeed={50} // typing speed
        backSpeed={30} // deleting speed

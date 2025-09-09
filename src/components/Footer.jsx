@@ -18,8 +18,11 @@ const Footer = () => {
      {/* Company Info */}
      <div className="lg:col-span-1">
       <div className="mb-6">
-       {/* <img src="./2.png" alt="Ovado ai Logo" width={120} className="mb-2" /> */}
-       <p className="logo text-2xl p-2 mb-2">Ovado Ai</p>
+       <img
+        src="./ovado-ai-logo1.png"
+        alt="Ovado ai Logo"
+        className="mb-2 w-28"
+       />
        <div className="flex space-x-4 mb-4">
         <Linkedin className="w-5 h-5 text-gray-400 hover:text-blue-400 cursor-pointer italic transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-400/50" />
         <Youtube className="w-5 h-5 text-gray-400 hover:text-red-400 cursor-pointer italic transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-400/50" />

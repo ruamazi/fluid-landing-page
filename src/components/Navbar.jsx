@@ -42,7 +42,7 @@ const NavLinks = ({
     />
    </a>
    <div
-    className={`lg:absolute lg:left-0 lg:top-full lg:mt-2 lg:invisible lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 lg:group-hover:translate-y-1 transition-all duration-300 lg:bg-[#0d1b3a] text-white lg:p-6 lg:rounded-2xl lg:shadow-lg lg:flex lg:gap-6 lg:z-50 ${
+    className={`min-[1200px]:absolute min-[1200px]:left-0 min-[1200px]:top-full min-[1200px]:mt-2 min-[1200px]:invisible min-[1200px]:opacity-0 min-[1200px]:group-hover:visible min-[1200px]:group-hover:opacity-100 min-[1200px]:group-hover:translate-y-1 transition-all duration-300 min-[1200px]:bg-[#0d1b3a] text-white min-[1200px]:p-6 min-[1200px]:rounded-2xl min-[1200px]:shadow-lg min-[1200px]:flex min-[1200px]:gap-6 min-[1200px]:z-50 ${
      isSolutionsOpen ? "block" : "hidden"
     }`}
    >
@@ -66,7 +66,7 @@ const NavLinks = ({
     />
    </a>
    <div
-    className={`lg:absolute lg:left-20 lg:top-full lg:mt-2 lg:invisible lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 lg:group-hover:translate-y-1 transition-all duration-300 lg:bg-[#0d1b3a] text-white lg:p-6 lg:rounded-2xl lg:shadow-lg lg:flex lg:gap-6 lg:z-50 ${
+    className={`min-[1200px]:absolute min-[1200px]:left-20 min-[1200px]:top-full min-[1200px]:mt-2 min-[1200px]:invisible min-[1200px]:opacity-0 min-[1200px]:group-hover:visible min-[1200px]:group-hover:opacity-100 min-[1200px]:group-hover:translate-y-1 transition-all duration-300 min-[1200px]:bg-[#0d1b3a] text-white min-[1200px]:p-6 min-[1200px]:rounded-2xl min-[1200px]:shadow-lg min-[1200px]:flex min-[1200px]:gap-6 min-[1200px]:z-50 ${
      isResourcesOpen ? "block" : "hidden"
     }`}
    >
@@ -153,7 +153,7 @@ const Navbar = () => {
  };
 
  return (
-  <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 px-10 md:px-30 bg-[#010c1e] text-white">
+  <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 px-10  lg:px-20 bg-[#010c1e] text-white">
    <div className="flex items-center space-x-2">
     <Link to="/">
      <img src="/ovado-ai-logo1.png" alt="logo" className="w-28" />
@@ -161,10 +161,10 @@ const Navbar = () => {
    </div>
 
    {/* Desktop Menu */}
-   <NavLinks className="hidden lg:flex space-x-6 text-gray-300 transition-all duration-300 gap-4 font-semibold" />
+   <NavLinks className="hidden min-[1200px]:flex space-x-6 text-gray-300 transition-all duration-300 gap-4 font-semibold" />
 
    {/* Buttons */}
-   <div className="hidden lg:flex items-center space-x-4">
+   <div className="hidden min-[1200px]:flex items-center space-x-4">
     <button className="px-4 py-2 bg-[#34394c] hover:text-black hover:bg-white">
      Login
     </button>
@@ -174,7 +174,7 @@ const Navbar = () => {
    </div>
 
    {/* Burger Menu Icon */}
-   <div className="lg:hidden">
+   <div className="min-[1200px]:hidden">
     <button
      onClick={() => setIsMenuOpen(!isMenuOpen)}
      className="relative w-8 h-8"
@@ -196,7 +196,7 @@ const Navbar = () => {
 
    {/* Mobile Menu */}
    <div
-    className={`absolute top-full left-0 w-full bg-[#010c1e] lg:hidden transition-all duration-300 ease-in-out ${
+    className={`absolute top-full left-0 w-full bg-[#010c1e] min-[1200px]:hidden transition-all duration-300 ease-in-out ${
      isMenuOpen ? "max-h-screen overflow-y-auto" : "max-h-0 overflow-hidden"
     }`}
    >

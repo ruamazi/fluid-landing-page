@@ -4,14 +4,12 @@ import { motion } from "framer-motion";
 const AgenticSection = () => {
  const smallSectionData = [
   {
-   text:
-    "Agents enhance every response by combining past context with real-time signals, delivering intelligence you can act on immediately.",
+   text: "Constantly evolving with new data.",
    image: "./howitworks-img3.webp",
    button: "Dynamic Learning",
   },
   {
-   text:
-    "Agents focus on delivering outcomes aligned with your business goals.",
+   text: "Insights aligned with outcomes that matter.",
    image: "./agentic-small-img2.webp",
    button: "Goal-Driven Outputs",
   },
@@ -35,7 +33,7 @@ const AgenticSection = () => {
        Unlike standard RAG, Ovado.ai’s Agentic RAG doesn’t just answer
        questions—it learns, adapts, and optimizes continuously to meet your
        business goals with precision.
-       <ul className="list-disc list-inside text-black">
+       {/* <ul className="list-disc list-inside text-black">
         <li className="text-gray-500">
          <span className="font-bold text-black">Dynamic Learning</span> -
          Constantly evolving with new data.
@@ -44,7 +42,7 @@ const AgenticSection = () => {
          <span className="font-bold text-black">Goal-Driven Outputs</span> -
          Insights aligned with outcomes that matter.
         </li>
-       </ul>
+       </ul> */}
       </p>
 
       {/* Buttons */}
@@ -70,9 +68,9 @@ const AgenticSection = () => {
        initial={{ opacity: 0, y: 20 }}
        animate={{ opacity: 1, y: 0 }}
        transition={{ duration: 0.4 }}
-       className="bg-gray-100 p-6 rounded-lg flex items-center space-x-6"
+       className="bg-gray-100 p-6 rounded-lg flex items-center gap-6"
       >
-       <div className="w-100 flex items-center justify-center">
+       <div className="flex items-center">
         <img
          src={smallSectionData[activeIndex].image}
          alt={smallSectionData[activeIndex].button}
@@ -100,7 +98,11 @@ const AgenticSection = () => {
     </div>
 
     {/* Bottom text line */}
-    <div className="mt-6 text-center md:text-left">
+    <div className="mt-6 text-left flex flex-col gap-2">
+     <p className="text-gray-600 font-bold">
+      Agents enhance every response by combining past context with real-time
+      signals, delivering intelligence you can act on immediately.
+     </p>
      <p className="text-gray-600 font-bold">
       Ovado.ai transforms information into strategy—accurate, evolving, and
       business-ready.

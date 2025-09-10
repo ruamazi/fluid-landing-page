@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const WhatWeDoSection = () => {
  const [activeId, setActiveId] = useState(1);
@@ -9,30 +10,36 @@ const WhatWeDoSection = () => {
    title: "Create Multi-Agent Workflows with Ease",
    description:
     "Design and launch scalable workflows without the tech complexity. Focus on business growth while Ovado AI handles the heavy lifting.",
+   image: "what-we-do.webp",
   },
   {
    id: 2,
    title: "Not Just Text—But Voice, Too",
    description:
     "Engage customers and teams through dynamic, natural interactions across text and voice for a truly human-like experience.",
+   image: "whatwedo-img2.webp",
   },
   {
    id: 3,
    title: "Flexible Deployment: Cloud, On-Prem, or Hybrid",
    description:
     "Your infrastructure, your rules. Ovado.ai integrates seamlessly across environments, ensuring enterprise-grade security and scalability.",
+   image: "whatwedo-img3.webp",
   },
   {
    id: 4,
    title: "Agentic RAG: Real-Time Knowledge Retrieval Engine",
    description:
     "Empower your AI with instant access to enterprise knowledge—delivering precise, context-aware answers with no hallucinations.",
+   image: "whatwedo-img4.webp",
   },
  ];
 
  const handleItemClick = (id) => {
   setActiveId(id);
  };
+
+ const activeItem = data.find((item) => item.id === activeId);
 
  return (
   <section className="bg-white py-16 px-8 lg:px-16">
@@ -59,7 +66,9 @@ const WhatWeDoSection = () => {
       {data.map((item) => (
        <div key={item.id} className="space-y-4 relative">
         <h3
-         className="text-3xl font-bold text-gray-900 cursor-pointer"
+         className={`${
+          activeId === item.id ? "text-gray-900" : "text-gray-400"
+         } text-xl lg:text-2xl font-bold cursor-pointer`}
          onClick={() => handleItemClick(item.id)}
         >
          {item.title}
@@ -76,14 +85,21 @@ const WhatWeDoSection = () => {
       ))}
      </div>
 
-     {/* Right Column: Image */}
+     {/* Right Column: Animated Image */}
      <div className="flex-1 flex justify-center md:justify-end">
-      <div className="bg-gray-200 rounded-3xl overflow-hidden shadow-xl">
-       <img
-        src="what-we-do.webp"
-        alt="Hands typing on a laptop displaying AI"
-        className="w-full h-auto object-cover"
-       />
+      <div className="bg-gray-200 rounded-3xl overflow-hidden shadow-xl w-[500px] h-auto flex items-center justify-center">
+       <AnimatePresence mode="wait">
+        <motion.img
+         key={activeItem.id}
+         src={activeItem.image}
+         alt={activeItem.title}
+         className="w-[500px] h-auto object-cover"
+         initial={{ opacity: 0, y: 20 }}
+         animate={{ opacity: 1, y: 0 }}
+         exit={{ opacity: 0, y: -20 }}
+         transition={{ duration: 0.5, ease: "easeInOut" }}
+        />
+       </AnimatePresence>
       </div>
      </div>
     </div>

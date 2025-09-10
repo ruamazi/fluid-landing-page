@@ -84,14 +84,16 @@ const IntegrationsSection = () => {
         animate={{ opacity: 1, rotate: 0, scale: 1 }}
         exit={{ opacity: 0, rotate: 180, scale: 0.5 }}
         transition={{ duration: 0.4 }}
-        className=" rounded-full border-gray-300 flex justify-center items-center overflow-hidden relative"
+        className="relative rounded-full overflow-hidden flex justify-center items-center"
        >
-        {/* Image */}
-        <img
-         src={integrationsContent[activeTab].image}
-         alt={integrationsContent[activeTab].key}
-         className="rounded-full w-72 md:w-full object-cover"
-        />
+        {/* Fixed-size container to prevent layout shift */}
+        <div className="relative aspect-square w-72 md:w-[400px] lg:w-[500px]">
+         <img
+          src={integrationsContent[activeTab].image}
+          alt={integrationsContent[activeTab].key}
+          className="absolute inset-0 w-full h-full object-cover rounded-full"
+         />
+        </div>
        </motion.div>
       </AnimatePresence>
      </div>

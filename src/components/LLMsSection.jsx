@@ -50,11 +50,11 @@ const logos = [
 
 const LLMsSection = () => {
  return (
-  <section className="bg-white py-16 md:py-24">
-   <div className="container mx-auto px-4 md:px-8">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+  <section className="bg-white py-16 md:py-24 ">
+   <div className="container mx-auto px-4 md:px-8 ">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 items-center max-w-7xl mx-auto">
      {/* Left Column: Logos Grid */}
-     <div className="flex justify-center lg:justify-start">
+     <div className="flex justify-center lg:justify-start ">
       <div className="grid grid-cols-3 gap-8 md:gap-12 max-w-lg lg:max-w-none">
        {logos.map((logo) => (
         <div key={logo.id} className="flex justify-center items-center">
@@ -70,7 +70,7 @@ const LLMsSection = () => {
 
      {/* Right Column: Text Content and Button */}
      <div className="text-center lg:text-left">
-      <p className="mx-auto text-sm text-blue-500 mb-2 bg-blue-100 w-fit px-2 rounded-xl ">
+      <p className="text-center md:text-left text-sm text-blue-500 mb-4 bg-blue-100 w-fit px-2 rounded-xl mt-4">
        AI That Understands, Thinks & Acts
       </p>
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">

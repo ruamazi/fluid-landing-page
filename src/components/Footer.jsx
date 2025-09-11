@@ -171,22 +171,6 @@ const Footer = () => {
      </div>
     </div>
 
-    {/* Resources Section */}
-    <div className="mb-8">
-     <h3 className="text-[#fdb529] font-semibold mb-4">Resources</h3>
-     <div className="flex flex-wrap gap-6">
-      <a href="#" className=" hover:text-[#fdb529] text-sm flex items-center">
-       <ChevronRight className="w-3 h-3 mr-1" /> Solution Overview
-      </a>
-      <a
-       href="#faq"
-       className=" hover:text-[#fdb529] text-sm flex items-center"
-      >
-       <ChevronRight className="w-3 h-3 mr-1" /> FAQs
-      </a>
-     </div>
-    </div>
-
     {/* Bottom Section */}
     <div className="border-t border-gray-700 pt-6">
      <div className="md:flex justify-between items-center">

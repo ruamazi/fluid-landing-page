@@ -1,23 +1,8 @@
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const SingleLink = ({ title, link }) => (
- <a
-  href={link}
-  className="px-3 py-2 rounded-lg transition-colors duration-300 hover:bg-[#1a244d] hover:text-white"
- >
-  {title}
- </a>
-);
-
-const NavLinks = ({
- className,
- isSolutionsOpen,
- toggleSolutions,
- isResourcesOpen,
- toggleResources,
-}) => (
+const NavLinks = ({ className }) => (
  <div className={`${className} relative`}>
   <a href="#home" className="hover:text-[#fdb529]">
    Home
@@ -25,57 +10,17 @@ const NavLinks = ({
   <a href="#about-us" className="hover:text-[#fdb529]">
    About Us
   </a>
-
-  {/* Solutions dropdown */}
-  <div className=" group lg:block">
-   <a
-    href="#"
-    className="flex items-center gap-2 hover:text-[#fdb529]"
-    onClick={toggleSolutions}
-   >
-    Solutions
-    <ChevronDown
-     size={18}
-     className={`transition-transform duration-300 ${
-      isSolutionsOpen ? "-rotate-180" : ""
-     }`}
-    />
-   </a>
-   <div
-    className={`min-[1200px]:absolute min-[1200px]:left-0 min-[1200px]:top-full min-[1200px]:mt-2 min-[1200px]:invisible min-[1200px]:opacity-0 min-[1200px]:group-hover:visible min-[1200px]:group-hover:opacity-100 min-[1200px]:group-hover:translate-y-1 transition-all duration-300 min-[1200px]:bg-[#0d1b3a] text-white min-[1200px]:p-6 min-[1200px]:rounded-2xl min-[1200px]:shadow-lg min-[1200px]:flex min-[1200px]:gap-6 min-[1200px]:z-50 ${
-     isSolutionsOpen ? "block" : "hidden"
-    }`}
-   >
-    <SolutionsDropdown />
-   </div>
-  </div>
-
-  {/* Resources dropdown */}
-  <div className="group lg:block">
-   <a
-    href="#"
-    className="flex items-center gap-2 hover:text-[#fdb529]"
-    onClick={toggleResources}
-   >
-    Resources
-    <ChevronDown
-     size={18}
-     className={`transition-transform duration-300 ${
-      isResourcesOpen ? "-rotate-180" : ""
-     }`}
-    />
-   </a>
-   <div
-    className={`min-[1200px]:absolute min-[1200px]:left-20 min-[1200px]:top-full min-[1200px]:mt-2 min-[1200px]:invisible min-[1200px]:opacity-0 min-[1200px]:group-hover:visible min-[1200px]:group-hover:opacity-100 min-[1200px]:group-hover:translate-y-1 transition-all duration-300 min-[1200px]:bg-[#0d1b3a] text-white min-[1200px]:p-6 min-[1200px]:rounded-2xl min-[1200px]:shadow-lg min-[1200px]:flex min-[1200px]:gap-6 min-[1200px]:z-50 ${
-     isResourcesOpen ? "block" : "hidden"
-    }`}
-   >
-    <ResourcesDropdown />
-   </div>
-  </div>
-
-  <a href="#" className="hover:text-[#fdb529]">
-   Careers
+  <a href="#use-cases" className="hover:text-[#fdb529]">
+   Use Cases
+  </a>
+  <a href="#deployment" className="hover:text-[#fdb529]">
+   Deployment
+  </a>
+  <a href="#integrations" className="hover:text-[#fdb529]">
+   Integrations
+  </a>
+  <a href="#faq" className="hover:text-[#fdb529]">
+   ⁠FAQ
   </a>
   <a href="#contact-us" className="hover:text-[#fdb529]">
    Contact Us
@@ -83,82 +28,8 @@ const NavLinks = ({
  </div>
 );
 
-const SolutionsDropdown = () => (
- <>
-  <div className="flex flex-col gap-2 min-w-[180px]">
-   <a
-    href="#use-cases"
-    className="px-3 py-2 rounded-lg transition-colors duration-300 hover:bg-[#1a244d] hover:text-white"
-   >
-    Use cases
-   </a>
-   <a
-    href="#deployment"
-    className="px-3 py-2 rounded-lg transition-colors duration-300 hover:bg-[#1a244d] hover:text-white"
-   >
-    Deployment
-   </a>
-  </div>
-  <div className="flex flex-col gap-2 min-w-[180px]">
-   <h4 className="font-semibold underline">Channels</h4>
-   <SingleLink title="Voice & Calls" link="#" />
-   <SingleLink title="Website Chatbot" link="#" />
-   <SingleLink title="WhatsApp Chatbot" link="#" />
-  </div>
-  <div className="flex flex-col gap-2 min-w-[180px]">
-   <h4 className="font-semibold underline">Serving Industries</h4>
-   <SingleLink title="Banking & Finance" link="#" />
-   <SingleLink title="Manufacturing" link="#" />
-   <SingleLink title="Automotives" link="#" />
-   <SingleLink title="Telecom" link="#" />
-  </div>
-  <div className="flex flex-col gap-2 min-w-[180px]">
-   <h4 className="font-semibold underline">Solution Overview</h4>
-   <SingleLink title="Organisational Agentic AI Capability" link="#" />
-   <SingleLink title="Product Overview" link="#" />
-   <SingleLink title="Architecture" link="#" />
-   <SingleLink title="Integrations" link="#" />
-   <SingleLink title="Platform Features" link="#" />
-  </div>
- </>
-);
-
-const ResourcesDropdown = () => (
- <>
-  <div className="flex flex-col gap-2 min-w-[180px]">
-   <SingleLink title="Blogs" link="#" />
-   <SingleLink title="Events" link="#" />
-   <SingleLink title="Podcasts" link="#" />
-  </div>
-  <div className="flex flex-col gap-2 min-w-[180px]">
-   <SingleLink title="AI Workshop" link="#" />
-   <SingleLink title="Webinars" link="#" />
-   <SingleLink title="FAQs" link="#faq" />
-  </div>
-  <div className="flex flex-col gap-2 min-w-[180px]">
-   <SingleLink title="Reports" link="#" />
-   <SingleLink title="Agentic AI Use Case Playbook" link="#" />
-   <SingleLink title="ADS" link="#" />
-  </div>
- </>
-);
-
 const Navbar = () => {
  const [isMenuOpen, setIsMenuOpen] = useState(false);
- const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
- const [isResourcesOpen, setIsResourcesOpen] = useState(false);
-
- const navigate = useNavigate();
-
- const toggleSolutions = () => {
-  setIsSolutionsOpen(!isSolutionsOpen);
-  setIsResourcesOpen(false); // Close other dropdown
- };
-
- const toggleResources = () => {
-  setIsResourcesOpen(!isResourcesOpen);
-  setIsSolutionsOpen(false); // Close other dropdown
- };
 
  return (
   <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 px-10  lg:px-20 bg-[#010c1e] text-white">
@@ -169,22 +40,16 @@ const Navbar = () => {
    </div>
 
    {/* Desktop Menu */}
-   <NavLinks className="hidden min-[1200px]:flex space-x-6 text-gray-300 transition-all duration-300 gap-4 font-semibold" />
+   <NavLinks className="hidden min-[1200px]:flex gap-0 lg:gap-1 text-gray-300 transition-all duration-300 font-semibold" />
 
    {/* Buttons */}
    <div className="hidden min-[1200px]:flex items-center space-x-4">
-    {/* <button className="px-4 py-2 bg-[#34394c] hover:text-black hover:bg-white">
-     Login
-    </button> */}
     <a
      href="#contact-us"
      className="bg-blue-600 text-white px-4 py-2 hover:text-black hover:bg-white rounded-lg cursor-pointer transition-all duration-300 text-center"
     >
      Book a Demo Call
     </a>
-    {/* <button className="bg-blue-600 text-white px-4 py-2 hover:text-black hover:bg-white">
-     Book a Demo Call
-    </button> */}
    </div>
 
    {/* Burger Menu Icon */}
@@ -214,17 +79,8 @@ const Navbar = () => {
      isMenuOpen ? "max-h-screen overflow-y-auto" : "max-h-0 overflow-hidden"
     }`}
    >
-    <NavLinks
-     className="flex flex-col items-center space-y-4 py-8 text-gray-300 font-semibold"
-     isSolutionsOpen={isSolutionsOpen}
-     toggleSolutions={toggleSolutions}
-     isResourcesOpen={isResourcesOpen}
-     toggleResources={toggleResources}
-    />
+    <NavLinks className="flex flex-col items-center space-y-4 py-8 text-gray-300 font-semibold" />
     <div className="flex flex-col items-center space-y-4 py-4">
-     {/* <button className="px-4 py-2 bg-[#34394c] hover:text-black hover:bg-white w-3/4">
-      Login
-     </button> */}
      <a
       href="#contact-us"
       className="bg-blue-600 text-white px-4 py-2 hover:text-black hover:bg-white w-3/4 rounded-lg cursor-pointer transition-all duration-300 text-center"

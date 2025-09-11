@@ -6,10 +6,10 @@ const Hero = () => {
   <div className="w-full bg-[#020d1e] text-white mt-17 bg-[url('/bg-img1.webp')] bg-cover">
    <div className=" mx-auto flex flex-col lg:flex-row items-center justify-between px-8 py-16 max-w-[1346px] gap-4">
     <div className="w-full lg:w-1/2 text-left mb-10 lg:mb-0 relative">
-     <h1 className="text-4xl md:text-5xl font-extrabold leading-tight ] mb-4">
+     <h1 className="text-4xl text-white md:text-[#fdb529] md:text-5xl font-extrabold leading-tight ] mb-4">
       Unlock Smarter Customer <br /> Success! Multi-Agent AI <br /> built to
      </h1>
-     <h2 className="text-3xl text-[#fdb529] md:text-4xl font-bold mb-6">
+     <h2 className="text-3xl md:text-white text-[#fdb529] md:text-4xl font-bold mb-6">
       <ReactTyped
        strings={[
         "Automate Customer Support",

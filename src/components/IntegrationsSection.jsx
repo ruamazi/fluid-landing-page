@@ -25,7 +25,7 @@ const IntegrationsSection = () => {
  const [activeTab, setActiveTab] = useState("Finance & Big Data");
 
  return (
-  <section className="bg-white py-10 md:py-16">
+  <section className="bg-white py-10 md:py-16 max-w-7xl mx-auto">
    <div className="container mx-auto px-4 mb-7 md:px-8">
     <div className="text-center mb-12">
      <p className="mx-auto text-sm text-blue-500 mb-2 bg-blue-100 w-fit px-2 rounded-xl ">

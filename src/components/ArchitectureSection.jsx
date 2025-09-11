@@ -59,10 +59,8 @@ const ArchitectureSection = () => {
       Your AI, Your Infrastructure
      </p>
 
-     <h2 className="text-3xl md:text-4xl font-semibold leading-tight">
-      Ovado.ai adapts to your enterprise architecture with flexible, secure
-      deployment options—giving you total control over data, compliance, and
-      scale.
+     <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+      Flexible Deployment Choices for you Infrastructure
      </h2>
     </div>
 
@@ -73,7 +71,7 @@ const ArchitectureSection = () => {
        key={key}
        onClick={() => setActiveTab(key)}
        className={`
-                px-4 py-2 rounded-full border-2 font-medium text-sm transition-all duration-300
+                px-4 py-2 rounded-full border-2 font-medium text-sm transition-all duration-300 
                 ${
                  activeTab === key
                   ? "border-black bg-white text-gray-900 shadow-sm"
@@ -87,7 +85,7 @@ const ArchitectureSection = () => {
     </div>
 
     {/* Content Box */}
-    <div className="border border-gray-200 p-8 md:p-12 rounded-lg bg-gray-50">
+    <div className="border border-gray-200 p-8 md:p-12 rounded-lg bg-gray-50 max-w-6xl mx-auto">
      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
       {/* Left Content */}
       <div>

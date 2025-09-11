@@ -39,7 +39,7 @@ const ImpactSection = () => {
 
  return (
   <div className="">
-   <div className="container mx-auto px-4 py-10">
+   <div className="container mx-auto px-4 py-10 max-w-7xl">
     <div className="text-center mb-16">
      <p className="text-sm mx-auto text-blue-500 mb-2 bg-blue-100 w-fit px-2 rounded-xl">
       Real-World Impact

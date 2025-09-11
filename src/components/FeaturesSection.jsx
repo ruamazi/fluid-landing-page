@@ -66,7 +66,7 @@ const FeaturesSection = () => {
      <h2 className="text-4xl md:text-5xl font-bold leading-tight">
       Deploy Smarter AI in Just 60 Days
      </h2>
-     <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
+     <p className="mt-4 text-lg text-gray-700 max-w-3xl mx-auto">
       Ovado.ai combines performance, security, and flexibility to help you
       achieve faster impact:
      </p>

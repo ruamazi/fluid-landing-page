@@ -62,7 +62,7 @@ const WhatWeDoSection = () => {
 
     <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
      {/* Left Column: Text Content */}
-     <div className="flex-1 space-y-8">
+     <div className="flex-1 space-y-8 lg:p-14">
       {data.map((item) => (
        <div key={item.id} className="space-y-4 relative">
         <h3
@@ -87,13 +87,13 @@ const WhatWeDoSection = () => {
 
      {/* Right Column: Animated Image */}
      <div className="flex-1 flex justify-center md:justify-end">
-      <div className="bg-gray-200 rounded-3xl overflow-hidden shadow-xl w-[500px] h-auto flex items-center justify-center">
+      <div className="bg-gray-200 rounded-3xl overflow-hidden shadow-xl w-[400px] h-[350px] md:w-[500px] md:h-[450px] flex items-center justify-center">
        <AnimatePresence mode="wait">
         <motion.img
          key={activeItem.id}
          src={activeItem.image}
          alt={activeItem.title}
-         className="w-[500px] h-auto object-cover"
+         className="w-full h-full object-cover"
          initial={{ opacity: 0, y: 20 }}
          animate={{ opacity: 1, y: 0 }}
          exit={{ opacity: 0, y: -20 }}

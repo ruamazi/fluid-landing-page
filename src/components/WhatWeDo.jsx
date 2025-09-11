@@ -42,7 +42,7 @@ const WhatWeDoSection = () => {
  const activeItem = data.find((item) => item.id === activeId);
 
  return (
-  <section className="bg-white py-16 px-8 lg:px-16">
+  <section id="about-us" className="bg-white py-16 px-8 lg:px-16">
    <div className="container mx-auto max-w-7xl">
     <p className="text-sm mx-auto text-blue-500 mb-2 bg-blue-100 w-fit px-2 rounded-xl">
      What We Do

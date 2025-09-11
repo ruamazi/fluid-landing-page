@@ -3,7 +3,10 @@ import { ReactTyped } from "react-typed";
 
 const Hero = () => {
  return (
-  <div className="w-full bg-[#020d1e] text-white mt-17 bg-[url('/bg-img1.webp')] bg-cover">
+  <div
+   id="home"
+   className="w-full bg-[#020d1e] text-white mt-17 bg-[url('/bg-img1.webp')] bg-cover"
+  >
    <div className=" mx-auto flex flex-col lg:flex-row items-center justify-between px-8 py-16 max-w-[1346px] gap-4">
     <div className="w-full lg:w-1/2 text-left mb-10 lg:mb-0 relative">
      <h1 className="text-4xl text-white md:text-[#fdb529] md:text-5xl font-extrabold leading-tight ] mb-4">
@@ -16,6 +19,7 @@ const Hero = () => {
         "Automate Content Creation",
         "Automate Sales and Marketing",
         "Automate Plant Operations",
+        ``,
        ]}
        typeSpeed={50} // typing speed
        backSpeed={30} // deleting speed
@@ -27,10 +31,14 @@ const Hero = () => {
       Cut support costs, boost team efficiency, and delight every customer with
       AI-powered personalized assistance that drives results.
      </p>
-     <button className="flex items-center justify-center gap-1 bg-blue-600 px-8 py-4 rounded-lg hover:text-black hover:bg-white">
+     <a
+      href="#contact-us"
+      className="flex items-center w-fit justify-center gap-1 bg-blue-600 px-8 py-4 rounded-lg hover:text-black hover:bg-white"
+     >
       Book a Demo Call
       <ArrowUpRight size={18} />
-     </button>
+     </a>
+
      <img
       src="./1.svg"
       alt=""

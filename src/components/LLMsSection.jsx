@@ -80,10 +80,13 @@ const LLMsSection = () => {
        Ovado.ai harnesses the world’s leading LLMs—trusted, high-performing
        models that fuel intelligence, adaptability, and unmatched results.
       </p>
-      <button className="flex mx-auto md:mx-0 text-white items-center justify-center gap-1 bg-blue-600 px-8 py-4 rounded-lg hover:text-blue-600 hover:bg-gray-100">
+      <a
+       href="#contact-us"
+       className="mx-auto lg:mx-0 flex items-center w-fit justify-center gap-1 bg-blue-600 px-8 py-4 rounded-lg hover:text-black hover:bg-white text-white"
+      >
        Book a Demo Call
        <ArrowUpRight size={18} />
-      </button>
+      </a>
      </div>
     </div>
    </div>

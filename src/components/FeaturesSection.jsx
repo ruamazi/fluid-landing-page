@@ -95,10 +95,13 @@ const FeaturesSection = () => {
     </div>
 
     <div className="text-center">
-     <button className="inline-flex gap-1 py-4 items-center bg-blue-600 text-white px-6 rounded-lg shadow-lg  hover:bg-gray-200 hover:text-blue-600 transition-colors">
+     <a
+      href="#contact-us"
+      className="mx-auto flex items-center w-fit justify-center gap-1 bg-blue-600 px-8 py-4 rounded-lg hover:text-black hover:bg-white text-white"
+     >
       Book a Demo Call
       <ArrowUpRight size={18} />
-     </button>
+     </a>
     </div>
    </div>
   </section>

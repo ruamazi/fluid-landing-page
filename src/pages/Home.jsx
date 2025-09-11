@@ -14,6 +14,7 @@ import FeaturesSection from "../components/FeaturesSection";
 import FaqSection from "../components/FaqSection";
 import AboutUsSection from "../components/AboutUsSection";
 import BlogsSection from "../components/BlogsSection";
+import ContactUs from "../components/ContactUs";
 
 const Home = () => {
  return (
@@ -32,6 +33,7 @@ const Home = () => {
    <FaqSection />
    <AboutUsSection />
    <BlogsSection />
+   <ContactUs />
    <Footer />
   </>
  );

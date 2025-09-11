@@ -30,7 +30,10 @@ const FaqSection = () => {
  };
 
  return (
-  <section className="bg-white py-16 md:py-24 border-t-2 border-2 border-gray-100 lg:bg-[url('/bg-img2.webp')]">
+  <section
+   id="faq"
+   className="bg-white py-16 md:py-24 border-t-2 border-2 border-gray-100 lg:bg-[url('/bg-img2.webp')]"
+  >
    <div className="container mx-auto px-4 md:px-8">
     <div className="text-center mb-12">
      <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">

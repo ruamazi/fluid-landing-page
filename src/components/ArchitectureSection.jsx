@@ -52,7 +52,7 @@ const ArchitectureSection = () => {
  const activeContent = content[activeTab];
 
  return (
-  <section className="bg-white py-8 md:py-14">
+  <section id="deployment" className="bg-white py-8 md:py-14">
    <div className="container mx-auto px-4 md:px-8">
     <div className="text-center mb-8">
      <p className="mx-auto text-sm text-blue-500 mb-2 bg-blue-100 w-fit px-2 rounded-xl ">

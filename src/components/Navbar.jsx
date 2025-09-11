@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SingleLink = ({ title, link }) => (
  <a
@@ -19,10 +19,10 @@ const NavLinks = ({
  toggleResources,
 }) => (
  <div className={`${className} relative`}>
-  <a href="#" className="hover:text-[#fdb529]">
+  <a href="#home" className="hover:text-[#fdb529]">
    Home
   </a>
-  <a href="#" className="hover:text-[#fdb529]">
+  <a href="#about-us" className="hover:text-[#fdb529]">
    About Us
   </a>
 
@@ -77,7 +77,7 @@ const NavLinks = ({
   <a href="#" className="hover:text-[#fdb529]">
    Careers
   </a>
-  <a href="#" className="hover:text-[#fdb529]">
+  <a href="#contact-us" className="hover:text-[#fdb529]">
    Contact Us
   </a>
  </div>
@@ -86,12 +86,18 @@ const NavLinks = ({
 const SolutionsDropdown = () => (
  <>
   <div className="flex flex-col gap-2 min-w-[180px]">
-   <h4 className="font-semibold underline">Use cases</h4>
-   <SingleLink title="Customer Service" link="#" />
-   <SingleLink title="Sales Assistance" link="#" />
-   <SingleLink title="Employee Productivity" link="#" />
-   <SingleLink title="Marketing" link="#" />
-   <SingleLink title="Internal Facing" link="#" />
+   <a
+    href="#use-cases"
+    className="px-3 py-2 rounded-lg transition-colors duration-300 hover:bg-[#1a244d] hover:text-white"
+   >
+    Use cases
+   </a>
+   <a
+    href="#deployment"
+    className="px-3 py-2 rounded-lg transition-colors duration-300 hover:bg-[#1a244d] hover:text-white"
+   >
+    Deployment
+   </a>
   </div>
   <div className="flex flex-col gap-2 min-w-[180px]">
    <h4 className="font-semibold underline">Channels</h4>
@@ -127,7 +133,7 @@ const ResourcesDropdown = () => (
   <div className="flex flex-col gap-2 min-w-[180px]">
    <SingleLink title="AI Workshop" link="#" />
    <SingleLink title="Webinars" link="#" />
-   <SingleLink title="FAQs" link="#" />
+   <SingleLink title="FAQs" link="#faq" />
   </div>
   <div className="flex flex-col gap-2 min-w-[180px]">
    <SingleLink title="Reports" link="#" />
@@ -141,6 +147,8 @@ const Navbar = () => {
  const [isMenuOpen, setIsMenuOpen] = useState(false);
  const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
+
+ const navigate = useNavigate();
 
  const toggleSolutions = () => {
   setIsSolutionsOpen(!isSolutionsOpen);
@@ -165,12 +173,18 @@ const Navbar = () => {
 
    {/* Buttons */}
    <div className="hidden min-[1200px]:flex items-center space-x-4">
-    <button className="px-4 py-2 bg-[#34394c] hover:text-black hover:bg-white">
+    {/* <button className="px-4 py-2 bg-[#34394c] hover:text-black hover:bg-white">
      Login
-    </button>
-    <button className="bg-blue-600 text-white px-4 py-2 hover:text-black hover:bg-white">
+    </button> */}
+    <a
+     href="#contact-us"
+     className="bg-blue-600 text-white px-4 py-2 hover:text-black hover:bg-white rounded-lg cursor-pointer transition-all duration-300 text-center"
+    >
      Book a Demo Call
-    </button>
+    </a>
+    {/* <button className="bg-blue-600 text-white px-4 py-2 hover:text-black hover:bg-white">
+     Book a Demo Call
+    </button> */}
    </div>
 
    {/* Burger Menu Icon */}
@@ -208,12 +222,15 @@ const Navbar = () => {
      toggleResources={toggleResources}
     />
     <div className="flex flex-col items-center space-y-4 py-4">
-     <button className="px-4 py-2 bg-[#34394c] hover:text-black hover:bg-white w-3/4">
+     {/* <button className="px-4 py-2 bg-[#34394c] hover:text-black hover:bg-white w-3/4">
       Login
-     </button>
-     <button className="bg-blue-600 text-white px-4 py-2 hover:text-black hover:bg-white w-3/4">
+     </button> */}
+     <a
+      href="#contact-us"
+      className="bg-blue-600 text-white px-4 py-2 hover:text-black hover:bg-white w-3/4 rounded-lg cursor-pointer transition-all duration-300 text-center"
+     >
       Book a Demo Call
-     </button>
+     </a>
     </div>
    </div>
   </nav>

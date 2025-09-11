@@ -25,10 +25,13 @@ const AboutUsSection = () => {
       </p>
 
       <div className="mt-8">
-       <button className="inline-flex gap-1 py-4 items-center bg-blue-600 text-white px-6 rounded-lg shadow-lg  hover:bg-gray-100 hover:text-blue-600 transition-colors">
+       <a
+        href="#contact-us"
+        className="flex items-center w-fit justify-center gap-1 bg-blue-600 px-8 py-4 rounded-lg hover:text-black hover:bg-white text-white"
+       >
         Book a Free Demo Call
         <ArrowUpRight size={18} />
-       </button>
+       </a>
       </div>
      </div>
 

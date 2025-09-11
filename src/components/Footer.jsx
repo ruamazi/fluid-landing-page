@@ -41,12 +41,18 @@ const Footer = () => {
       <h3 className="text-[#fdb529] font-semibold mb-4">Explore Ovado AI</h3>
       <ul className="space-y-2">
        <li>
-        <a href="#" className=" hover:text-[#fdb529] text-sm flex items-center">
+        <a
+         href="#home"
+         className=" hover:text-[#fdb529] text-sm flex items-center"
+        >
          <ChevronRight className="w-3 h-3 mr-1" /> Home
         </a>
        </li>
        <li>
-        <a href="#" className=" hover:text-[#fdb529] text-sm flex items-center">
+        <a
+         href="#about-us"
+         className=" hover:text-[#fdb529] text-sm flex items-center"
+        >
          <ChevronRight className="w-3 h-3 mr-1" /> About Us
         </a>
        </li>
@@ -83,19 +89,24 @@ const Footer = () => {
       <h3 className="text-[#fdb529] font-semibold mb-4">Solutions</h3>
       <ul className="space-y-2">
        <li>
-        <a href="#" className=" hover:text-[#fdb529] text-sm flex items-center">
-         <ChevronRight className="w-3 h-3 mr-1" /> Employee Assistance &
-         Productivity
+        <a
+         href="#use-cases"
+         className=" hover:text-[#fdb529] text-sm flex items-center"
+        >
+         <ChevronRight className="w-3 h-3 mr-1" /> Use Cases
+        </a>
+       </li>
+       <li>
+        <a
+         href="#deployment"
+         className=" hover:text-[#fdb529] text-sm flex items-center"
+        >
+         <ChevronRight className="w-3 h-3 mr-1" /> Deployment
         </a>
        </li>
        <li>
         <a href="#" className=" hover:text-[#fdb529] text-sm flex items-center">
          <ChevronRight className="w-3 h-3 mr-1" /> Customer Support
-        </a>
-       </li>
-       <li>
-        <a href="#" className=" hover:text-[#fdb529] text-sm flex items-center">
-         <ChevronRight className="w-3 h-3 mr-1" /> Sales Assistance
         </a>
        </li>
       </ul>
@@ -151,10 +162,10 @@ const Footer = () => {
         <MessageCircle className="w-8 h-8 text-green-400 mr-2" />
        </div>
        <h4 className=" font-semibold mb-2 text-center">
-        Join the Enterprise Gen AI Community
+        Looking for Enterprise AI development?
        </h4>
        <button className="bg-green-500 hover:bg-green-600 text-gray-100 px-4 py-2 rounded-full text-sm font-medium transition-colors w-full">
-        Join our WhatsApp Community
+        Message Now!
        </button>
       </div>
      </div>
@@ -167,7 +178,10 @@ const Footer = () => {
       <a href="#" className=" hover:text-[#fdb529] text-sm flex items-center">
        <ChevronRight className="w-3 h-3 mr-1" /> Solution Overview
       </a>
-      <a href="#" className=" hover:text-[#fdb529] text-sm flex items-center">
+      <a
+       href="#faq"
+       className=" hover:text-[#fdb529] text-sm flex items-center"
+      >
        <ChevronRight className="w-3 h-3 mr-1" /> FAQs
       </a>
      </div>

@@ -57,28 +57,43 @@ const Footer = () => {
         </a>
        </li>
        <li>
-        <a href="#" className=" hover:text-[#fdb529] text-sm flex items-center">
-         <ChevronRight className="w-3 h-3 mr-1" /> Blogs
+        <a
+         href="#use-cases"
+         className=" hover:text-[#fdb529] text-sm flex items-center"
+        >
+         <ChevronRight className="w-3 h-3 mr-1" /> Use Cases
         </a>
        </li>
        <li>
-        <a href="#" className=" hover:text-[#fdb529] text-sm flex items-center">
-         <ChevronRight className="w-3 h-3 mr-1" /> Events
+        <a
+         href="#deployment"
+         className=" hover:text-[#fdb529] text-sm flex items-center"
+        >
+         <ChevronRight className="w-3 h-3 mr-1" /> Deployment
         </a>
        </li>
        <li>
-        <a href="#" className=" hover:text-[#fdb529] text-sm flex items-center">
-         <ChevronRight className="w-3 h-3 mr-1" /> Webinars
+        <a
+         href="#integrations"
+         className=" hover:text-[#fdb529] text-sm flex items-center"
+        >
+         <ChevronRight className="w-3 h-3 mr-1" /> Integrations
         </a>
        </li>
        <li>
-        <a href="#" className=" hover:text-[#fdb529] text-sm flex items-center">
-         <ChevronRight className="w-3 h-3 mr-1" /> AI Workshop
+        <a
+         href="#faq"
+         className=" hover:text-[#fdb529] text-sm flex items-center"
+        >
+         <ChevronRight className="w-3 h-3 mr-1" /> ⁠FAQ
         </a>
        </li>
        <li>
-        <a href="#" className=" hover:text-[#fdb529] text-sm flex items-center">
-         <ChevronRight className="w-3 h-3 mr-1" /> Podcast
+        <a
+         href="#contact-us"
+         className=" hover:text-[#fdb529] text-sm flex items-center"
+        >
+         <ChevronRight className="w-3 h-3 mr-1" /> Contact Us
         </a>
        </li>
       </ul>

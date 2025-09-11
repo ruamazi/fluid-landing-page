@@ -58,7 +58,7 @@ const features = [
 const FeaturesSection = () => {
  return (
   <section className="bg-white py-8 md:py-12">
-   <div className="container mx-auto px-4 md:px-8">
+   <div className="container px-4 md:px-8 max-w-7xl mx-auto">
     <div className="text-center mb-12">
      <p className="mx-auto text-sm text-blue-500 mb-2 bg-blue-100 w-fit px-2 rounded-xl ">
       Why Choose Ovado AI?
